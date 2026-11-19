@@ -13,4 +13,10 @@ provider "aws" {
 
 resource "aws_s3_bucket" "demo" {
   bucket = "rajeshhwork-project6-demo"
+
+  tags = {
+    Environment = "Dev"
+    Owner       = "Rajesh"
+    Project     = "Version-Control"
+  }
 }
